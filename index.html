@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stykesheet" href="style.css">
+        <title>Contact Our Company</title>
+    </head>
+    <body>
+        <h1>Contact Our Company</h1>
+        <p>We'd love to hear from you!</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <h2>Send us a Message</h2>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name"><br><br>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email"><br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone"><br>
+                <small>Format: 123-456-7890</small>
+            </fieldset>
+            <fieldset>
+                <legend>Your Message</legend>
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option>General Inquiry</option>
+                    <option>Support</option>
+                    <option>Feedback</option>
+                </select><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+                <input type="checkbox" id="urgent" name="urgent">
+                <label for="urgent">Mark as urgent</label><br><br>
+                <p>Preferred contact method:</p>
+                <input type="radio" id="emailContact" name="ContactMethod" value="email" checked>
+                <label for="emailContact">Email</label>
+                <input type="radio" id="phoneContact" name="ContactMethod" value="phone">
+                <label for="phoneContact">Phone</label><br><br>
+            </fieldset>
+            <button type="submit">Send Message</button>
+            <button type="reset">Clear Form</button>
+            <h3>Our Location</h3>
+            <p>
+                <em>
+                123 Business Road<br>
+                Business City,BC 12345<br>
+                United States
+                </em>
+            </p>
+            <h4>Office Hours</h4>
+            <table border="1" cellpadding="5">
+                <tr>
+                    <th>Days</th>
+                    <th>Hours</th>
+                </tr>
+                <td>Monday - Friday</td>
+                <td>9:00 AM - 5:00 PM</td>
+                <tr>
+                    <td>Saturday</td>
+                    <td>10:00 AM - 2:00PM</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Closed</td>
+                </tr>
+            </table>
+            <p>&copy 2023 Our Company. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms of Service</a>
+            </p>
+        </form>
+    </body>
+</html>
